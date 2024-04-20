@@ -9,3 +9,7 @@ test('exception', () => {
     // Memastikan terjadi exception sesuai dengan string message
     expect(() => callMe("Talif")).toThrow("Ups my exception happens");
 })
+
+test('exception not happens', () => {
+    expect(callMe("Arif")).toBe('ok');
+})

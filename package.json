@@ -7,10 +7,20 @@
     "test": "jest"
   },
   "jest": {
+    "maxConcurrency": 2,
     "verbose": true,
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
-    }
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "collectCoverage": true
   },
   "keywords": [],
   "author": "Abdul Talif Parinduri",
